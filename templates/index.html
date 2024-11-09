@@ -3,13 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Vercel App</title>
+    <title>My Company</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <div class="container">
-        <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Logo" class="logo">
-        <h1>Welcome to My Vercel App</h1>
-    </div>
+    <section class="hero">
+        <div class="container">
+            <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Logo" class="logo">
+            <h1>Welcome to My Company</h1>
+        </div>
+    </section>
+
+    <section id="mission">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <div class="mission-content">
+                <p>Our mission is to revolutionize the industry through innovative solutions and exceptional service. We strive to create sustainable value for our customers while maintaining the highest standards of quality and integrity.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="founder">
+        <div class="container">
+            <h2>Our Founder</h2>
+            <div class="founder-content">
+                <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Founder" class="founder-img">
+                <h3>John Doe</h3>
+                <p>John Doe founded the company in 2024 with a vision to transform the industry. With over 15 years of experience in technology and innovation, John leads the company towards continuous growth and excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="careers">
+        <div class="container">
+            <h2>Careers</h2>
+            <div class="careers-content">
+                <div class="job-listing">
+                    <h3>Senior Developer</h3>
+                    <p>We're looking for an experienced developer to join our growing team.</p>
+                </div>
+                <div class="job-listing">
+                    <h3>Marketing Manager</h3>
+                    <p>Join our marketing team and help shape our brand's future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-content">
+                <p>Get in touch with us for any inquiries or opportunities.</p>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
