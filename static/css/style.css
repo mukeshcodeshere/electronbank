@@ -20,22 +20,27 @@ body {
 
 /* Hero Section */
 .hero {
+    height: 50vh;
+    min-height: 400px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background-color: #333;  /* Dark background to make the logo stand out */
-    color: white;
     text-align: center;
-    padding: 60px 0;
+    background: #000;
 }
 
-.hero .logo {
-    width: 300px;  /* Larger logo */
-    height: auto;  /* Maintain aspect ratio */
-    margin-bottom: 2rem;
+.logo-container {
+    width: 100%;
+    max-width: 300px;  /* Optional: restrict max width of the logo */
+    margin: 0 auto;
 }
+
+.logo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;  /* Ensures the image is not distorted */
+}
+
 
 .hero h1 {
     font-size: 2.5rem;
