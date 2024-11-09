@@ -12,12 +12,6 @@ body {
     background-color: #f5f5f5;  /* Light background for the entire page */
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
 /* Hero Section */
 .hero {
     height: 50vh;
@@ -31,22 +25,16 @@ body {
 
 .logo-container {
     width: 100%;
-    max-width: 300px;  /* Optional: restrict max width of the logo */
+    max-width: 200px;  /* Adjusted: smaller max width for the logo */
     margin: 0 auto;
 }
 
 .logo {
     width: 100%;
     height: auto;
-    object-fit: contain;  /* Ensures the image is not distorted */
+    object-fit: contain;
 }
 
-
-.hero h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-top: 20px;
-}
 
 /* Section Styling */
 section {
@@ -203,5 +191,10 @@ h2.section-title {
 
     .contact-form button {
         font-size: 1rem;
+    }
+
+    /* Adjust the logo size on mobile */
+    .logo-container {
+        max-width: 150px;  /* Smaller max-width for mobile */
     }
 }
