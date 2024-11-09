@@ -1,82 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electron Bank</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Modern Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="container">
-            <div class="logo-container">
-                <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Electron Bank Logo" class="logo">
-            </div>
-        </div>
-    </header>
+  <header>
+    <div class="logo-container">
+      <img src="static/images/logo.svg" alt="Logo" class="logo">
+    </div>
+  </header>
 
-    <main>
-        <section class="section" id="mission">
-            <div class="container">
-                <h2 class="section-title">Our Mission</h2>
-                <p class="section-text">
-                    We are improving the technology capital markets of India.
-                </p>
-            </div>
-        </section>
+  <main>
+    <section class="hero">
+      <h1>Welcome to Our Modern Site</h1>
+      <p>We specialize in sleek and professional design solutions.</p>
+    </section>
+  </main>
 
-        <section class="section" id="founder">
-            <div class="container">
-                <h2 class="section-title">Our Founder</h2>
-                <div class="founder-content">
-                    <div class="founder-image-container">
-                        <h3 class="founder-name">Mukesh</h3>
-                    </div>
-                    <div class="founder-text">
-                        <p class="founder-bio">
-                            Mukesh is the CEO and founder of Electron Bank. He is passionate about the future of India and its technology sector, with a strong vision to elevate Indian tech companies onto the global stage. Mukesh holds a Bachelor's degree in Chemical Engineering, a Master's in Business Analytics from the National University of Singapore, and a Master of Financial Engineering from UC Berkeley.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="careers">
-            <div class="container">
-                <h2 class="section-title">Careers</h2>
-                <div class="job-listings">
-                    <div class="job-listing">
-                        <h3 class="job-title">Software Engineer</h3>
-                        <p class="job-description">Join our tech team and help innovate the future of banking.</p>
-                    </div>
-                    <div class="job-listing">
-                        <h3 class="job-title">COO</h3>
-                        <p class="job-description">Help build the bank of the future.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="contact">
-            <div class="container">
-                <h2 class="section-title">Contact Us</h2>
-                <div class="contact-info">
-                    <a href="mailto:info@electronbank.com" class="contact-link">info@electronbank.com</a>
-                    <p class="contact-text">For general inquiries</p>
-                    <a href="mailto:careers@electronbank.com" class="contact-link">careers@electronbank.com</a>
-                    <p class="contact-text">For job inquiries</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Electron Bank. All Rights Reserved.</p>
-        </div>
-    </footer>
+  <footer>
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+  </footer>
 </body>
 </html>
