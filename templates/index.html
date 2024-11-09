@@ -10,74 +10,69 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Hero Section -->
     <header class="hero">
         <div class="container">
-            <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Electron Bank Logo" class="logo">
-            <h1 class="hero-title">Empowering the Future of Finance</h1>
-            <p class="hero-subtitle">Innovating technology capital markets for India.</p>
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Electron Bank Logo" class="logo">
+            </div>
         </div>
     </header>
 
-    <!-- Main Content -->
     <main>
-        <!-- Mission Section -->
-        <section class="section mission" id="mission">
+        <section class="section" id="mission">
             <div class="container">
                 <h2 class="section-title">Our Mission</h2>
                 <p class="section-text">
-                    We aim to transform India's financial landscape by integrating cutting-edge technology into the banking sector.
+                    We are improving the technology capital markets of India.
                 </p>
             </div>
         </section>
 
-        <!-- Founder Section -->
-        <section class="section founder" id="founder">
+        <section class="section" id="founder">
             <div class="container">
-                <h2 class="section-title">Meet Our Founder</h2>
-                <div class="founder-details">
-                    <div class="founder-image">
-                        <img src="{{ url_for('static', filename='images/founder.jpg') }}" alt="Founder Image">
+                <h2 class="section-title">Our Founder</h2>
+                <div class="founder-content">
+                    <div class="founder-image-container">
+                        <h3 class="founder-name">Mukesh</h3>
                     </div>
-                    <div class="founder-bio">
-                        <h3>John Doe</h3>
-                        <p>John is a visionary entrepreneur, passionate about revolutionizing the financial services sector. With expertise in tech and business, he founded Electron Bank to empower businesses and individuals in the digital era.</p>
+                    <div class="founder-text">
+                        <p class="founder-bio">
+                            Mukesh is the CEO and founder of Electron Bank. He is passionate about the future of India and its technology sector, with a strong vision to elevate Indian tech companies onto the global stage. Mukesh holds a Bachelor's degree in Chemical Engineering, a Master's in Business Analytics from the National University of Singapore, and a Master of Financial Engineering from UC Berkeley.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Careers Section -->
-        <section class="section careers" id="careers">
+        <section class="section" id="careers">
             <div class="container">
-                <h2 class="section-title">Join Our Team</h2>
+                <h2 class="section-title">Careers</h2>
                 <div class="job-listings">
-                    <div class="job-item">
+                    <div class="job-listing">
                         <h3 class="job-title">Software Engineer</h3>
-                        <p class="job-description">Help us build the future of banking technology.</p>
+                        <p class="job-description">Join our tech team and help innovate the future of banking.</p>
                     </div>
-                    <div class="job-item">
-                        <h3 class="job-title">Chief Operating Officer</h3>
-                        <p class="job-description">Lead the operational success of our growing team.</p>
+                    <div class="job-listing">
+                        <h3 class="job-title">COO</h3>
+                        <p class="job-description">Help build the bank of the future.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="section contact" id="contact">
+        <section class="section" id="contact">
             <div class="container">
                 <h2 class="section-title">Contact Us</h2>
-                <div class="contact-details">
-                    <p>If you have any inquiries, feel free to reach out to us at:</p>
-                    <a href="mailto:info@electronbank.com" class="contact-email">info@electronbank.com</a>
-                    <a href="mailto:careers@electronbank.com" class="contact-email">careers@electronbank.com</a>
+                <div class="contact-info">
+                    <a href="mailto:info@electronbank.com" class="contact-link">info@electronbank.com</a>
+                    <p class="contact-text">For general inquiries</p>
+                    <a href="mailto:careers@electronbank.com" class="contact-link">careers@electronbank.com</a>
+                    <p class="contact-text">For job inquiries</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Electron Bank. All Rights Reserved.</p>
