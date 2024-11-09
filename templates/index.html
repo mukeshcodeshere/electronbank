@@ -13,6 +13,14 @@
   <header class="hero">
     <div class="container">
       <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Electron Bank Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#mission">Our Mission</a></li>
+          <li><a href="#founder">Our Founder</a></li>
+          <li><a href="#careers">Careers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -29,6 +37,7 @@
         <h2 class="section-title">Our Founder</h2>
         <div class="founder-content">
           <div class="founder-image">
+            <img src="{{ url_for('static', filename='images/founder.jpg') }}" alt="Mukesh, Founder of Electron Bank">
             <h3>Mukesh</h3>
           </div>
           <div class="founder-text">
@@ -47,10 +56,12 @@
           <div class="job-listing">
             <h3 class="job-title">Software Engineer</h3>
             <p class="job-description">Join our tech team and shape the future of banking.</p>
+            <a href="#" class="btn">Apply Now</a>
           </div>
           <div class="job-listing">
             <h3 class="job-title">COO</h3>
             <p class="job-description">Help us build the bank of tomorrow.</p>
+            <a href="#" class="btn">Apply Now</a>
           </div>
         </div>
       </div>

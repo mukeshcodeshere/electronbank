@@ -1,4 +1,4 @@
-/* Global Variables */
+/* Global Styles */
 :root {
     --primary-black: #000;
     --secondary-black: #1a1a1a;
@@ -8,7 +8,6 @@
     --transition: 0.3s ease;
   }
   
-  /* Reset and Base Styles */
   * {
     margin: 0;
     padding: 0;
@@ -17,8 +16,8 @@
   
   html {
     font-size: 16px;
-    scroll-behavior: smooth;
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
   }
   
   body {
@@ -35,16 +34,26 @@
     padding: 0 20px;
   }
   
-  /* Hero Section */
-  .hero {
-    height: 90vh;
-    display: flex;
-    align-items: center;
+  /* Header */
+  header {
     background-color: var(--secondary-black);
+    padding: 20px 0;
   }
   
-  .logo {
-    max-width: 200px;
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav a {
+    color: var(--primary-white);
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  
+  header nav a:hover {
+    color: var(--accent-color);
   }
   
   /* Section Styles */
@@ -81,6 +90,11 @@
   
   .founder-image {
     text-align: center;
+  }
+  
+  .founder-image img {
+    max-width: 200px;
+    border-radius: 50%;
   }
   
   .founder-name {
@@ -124,6 +138,21 @@
   .job-description {
     font-size: 1.125rem;
     color: var(--text-gray);
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--primary-white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  
+  .btn:hover {
+    background-color: darken(var(--accent-color), 10%);
   }
   
   /* Contact Section */
