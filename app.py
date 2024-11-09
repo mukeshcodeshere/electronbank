@@ -11,4 +11,4 @@ def hello():
     return jsonify({"message": "Hello from Python!"})
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
