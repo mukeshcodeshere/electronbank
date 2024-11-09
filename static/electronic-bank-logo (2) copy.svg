@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- IC Chip Design - based on common IC package -->
+  <g transform="translate(150, 50)">
+    <!-- Main chip body -->
+    <rect x="0" y="0" width="100" height="60" fill="black"/>
+    
+    <!-- Pin rows -->
+    <g id="pins">
+      <!-- Left pins -->
+      <rect x="-10" y="5" width="10" height="3" fill="black"/>
+      <rect x="-10" y="15" width="10" height="3" fill="black"/>
+      <rect x="-10" y="25" width="10" height="3" fill="black"/>
+      <rect x="-10" y="35" width="10" height="3" fill="black"/>
+      <rect x="-10" y="45" width="10" height="3" fill="black"/>
+      
+      <!-- Right pins -->
+      <rect x="100" y="5" width="10" height="3" fill="black"/>
+      <rect x="100" y="15" width="10" height="3" fill="black"/>
+      <rect x="100" y="25" width="10" height="3" fill="black"/>
+      <rect x="100" y="35" width="10" height="3" fill="black"/>
+      <rect x="100" y="45" width="10" height="3" fill="black"/>
+    </g>
+    
+    <!-- Orientation notch -->
+    <circle cx="10" cy="10" r="3" fill="white"/>
+  </g>
+  
+  <!-- Company Name - using a clean sans-serif font -->
+  <text x="200" y="160" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle">ELECTRON BANK</text>
+  
+  <!-- Slogan - using monospace for tech feel -->
+  <text x="200" y="190" font-family="Courier, monospace" font-size="16" text-anchor="middle">Future == Technology</text>
+</svg>

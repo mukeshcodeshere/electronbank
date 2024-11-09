@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electron Bank</title>
+    <style>
+        /* Global reset and body style */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            background-color: #fff;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        /* Logo */
+        .logo {
+            width: 200px; /* Adjust based on your logo size */
+            margin-bottom: 30px;
+        }
+
+        /* Headline and slogan styles */
+        h1 {
+            font-size: 3rem;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            color: #666;
+            margin-bottom: 50px;
+        }
+
+        /* Footer */
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+
+        /* Minimal styling for links */
+        a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Query for Responsiveness */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            .logo {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo -->
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Electron Bank Logo" class="logo">
+
+    <!-- Heading and Slogan -->
+    <h1>Electron Bank</h1>
+    <h2>Future == Technology</h2>
+
+    <!-- Optional Welcome Message -->
+    <p>Welcome to Electron Bank. We are shaping the future of banking through technology.</p>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Electron Bank. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
