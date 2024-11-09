@@ -15,9 +15,8 @@ def hello():
 def serve_static(filename):
     return send_from_directory('static', filename)
 
-# Entry point for Vercel
+# This is the entry point for Vercel serverless functions
 def handler(request):
-    """Return the response for the Flask app"""
-    with app.test_request_context():
+    """Handle incoming requests and return a response"""
+    with app.test_request_context(request.url):
         return app.full_dispatch_request()
-
