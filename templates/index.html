@@ -3,90 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electron Bank</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Helvetica', 'Arial', sans-serif;
-            background-color: #fff;
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-            text-align: center;
-            padding: 20px;
-            margin: 0;
-        }
-
-        .logo {
-            width: 200px;
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            font-size: 3rem;
-            color: #000;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            font-weight: normal;
-            color: #666;
-            margin-bottom: 50px;
-        }
-
-        footer {
-            position: absolute;
-            bottom: 20px;
-            font-size: 0.8rem;
-            color: #aaa;
-        }
-
-        a {
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            h2 {
-                font-size: 1.2rem;
-            }
-
-            .logo {
-                width: 150px;
-            }
-        }
-    </style>
+    <title>My Vercel App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-
-    <img src="{{ url_for('static', filename='logo.svg') }}" alt="Electron Bank Logo" class="logo">
-
-    <h1>Electron Bank</h1>
-    <h2>Future == Technology</h2>
-
-    <p>Welcome to Electron Bank. We are shaping the future of banking through technology.</p>
-
-    <footer>
-        <p>&copy; 2024 Electron Bank. All rights reserved.</p>
-    </footer>
-
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Logo" class="logo">
+        <h1>Welcome to My Vercel App</h1>
+    </div>
 </body>
 </html>
