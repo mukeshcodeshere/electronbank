@@ -3,73 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Professional Website</title>
+    <title>Electron Bank</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="/static/images/logo.svg" alt="Logo" class="logo">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="hero">
+        <div class="container">
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Electron Bank Logo" class="logo">
+            </div>
+        </div>
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Welcome to Your Professional Brand</h1>
-                <p>Crafting exceptional solutions with precision and elegance</p>
-                <a href="#contact" class="cta-button">Get Started</a>
+        <section class="section" id="mission">
+            <div class="container">
+                <h2 class="section-title">Our Mission</h2>
+                <p class="section-text">
+                    We are improving the technology capital markets of India.
+                </p>
             </div>
         </section>
 
-        <section id="about" class="about">
-            <div class="section-content">
-                <h2>About Us</h2>
-                <p>We deliver innovative solutions with a focus on simplicity and impact. Our approach combines cutting-edge technology with elegant design.</p>
-            </div>
-        </section>
-
-        <section id="services" class="services">
-            <div class="section-content">
-                <h2>Our Services</h2>
-                <div class="service-grid">
-                    <div class="service-item">
-                        <h3>Strategy</h3>
-                        <p>Comprehensive strategic planning</p>
+        <section class="section" id="founder">
+            <div class="container">
+                <h2 class="section-title">Our Founder</h2>
+                <div class="founder-content">
+                    <div class="founder-image-container">
+                        <h3 class="founder-name">Mukesh</h3>
                     </div>
-                    <div class="service-item">
-                        <h3>Design</h3>
-                        <p>Innovative and user-centric design solutions</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Development</h3>
-                        <p>Robust and scalable technological implementations</p>
+                    <div class="founder-text">
+                        <p class="founder-bio">
+                            Mukesh is the CEO and founder of Electron Bank. He is passionate about the future of India and its technology sector, with a strong vision to elevate Indian tech companies onto the global stage. Mukesh holds a Bachelor's degree in Chemical Engineering, a Master's in Business Analytics from the National University of Singapore, and a Master of Financial Engineering from UC Berkeley.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact">
-            <div class="section-content">
-                <h2>Contact Us</h2>
-                <form>
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit" class="cta-button">Send Message</button>
-                </form>
+        <section class="section" id="careers">
+            <div class="container">
+                <h2 class="section-title">Careers</h2>
+                <div class="job-listings">
+                    <div class="job-listing">
+                        <h3 class="job-title">Software Engineer</h3>
+                        <p class="job-description">Join our tech team and help innovate the future of banking.</p>
+                    </div>
+                    <div class="job-listing">
+                        <h3 class="job-title">COO</h3>
+                        <p class="job-description">Help build the bank of the future.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-info">
+                    <a href="mailto:info@electronbank.com" class="contact-link">info@electronbank.com</a>
+                    <p class="contact-text">For general inquiries</p>
+                    <a href="mailto:careers@electronbank.com" class="contact-link">careers@electronbank.com</a>
+                    <p class="contact-text">For job inquiries</p>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Electron Bank. All Rights Reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
