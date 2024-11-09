@@ -46,7 +46,7 @@ body {
     width: 100%; /* Make the logo fill the container width */
     height: auto; /* Maintain the aspect ratio */
     object-fit: contain; /* Ensure the image is not distorted */
-    max-width: 300px; /* Limit the maximum width */
+    max-width: 100%; /* Ensure it doesn't overflow the container */
     max-height: 200px; /* Limit the maximum height */
 }
 
@@ -167,12 +167,12 @@ h2.section-title {
 
     /* Adjust logo container and size for mobile */
     .logo-container {
-        max-width: 70%; /* Keep the logo from stretching too far on mobile */
+        max-width: 70%; /* Ensure the logo doesn't stretch too far */
     }
 
     .logo {
-        max-width: 200px; /* Reduce the size of the logo on small screens */
-        max-height: 150px; /* Adjust the max-height */
+        max-width: 200px; /* Reduce logo size on small screens */
+        max-height: 150px; /* Limit height for better scaling */
     }
 
     .hero h1 {
