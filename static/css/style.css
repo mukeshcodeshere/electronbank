@@ -1,284 +1,126 @@
-/* Global Variables */
 :root {
-    --primary-black: #0a0a0a;
-    --secondary-black: #1a1a1a;
-    --primary-white: #ffffff;
-    --text-gray: #9a9a9a;
-    --accent-color: #333333;
-    --transition: all 0.3s ease;
-    --font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    --electron-primary-black: #0a0a0a;
+    --electron-secondary-black: #1a1a1a;
+    --electron-white: #ffffff;
+    --electron-gray: #9a9a9a;
+    --electron-accent: #333333;
+    --electron-transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-/* Reset and Base Styles */
-* {
+.electron-body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--electron-primary-black);
+    color: var(--electron-white);
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
-    font-size: 16px;
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: var(--font-family);
-    line-height: 1.6;
-    background-color: var(--primary-black);
-    color: var(--primary-white);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-/* Container */
-.container {
+.electron-container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 5%;
 }
 
-/* Hero Section */
-.hero {
-    height: 90vh;
+.electron-hero {
+    height: 80vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: var(--secondary-black);
+    justify-content: center;
+    background-color: var(--electron-secondary-black);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.logo-container {
-    max-width: 300px;
-    width: 100%;
-    padding: 2rem;
+.electron-logo-wrapper {
+    max-width: 250px;
+    transition: var(--electron-transition);
 }
 
-.logo {
+.electron-logo {
     width: 100%;
-    height: auto;
-    object-fit: contain;
     filter: invert(1);
 }
 
-/* Section Styles */
-.section {
-    padding: 120px 0;
+.electron-section {
+    padding: 100px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    position: relative;
 }
 
-.section-title {
-    font-size: 2.8rem;
-    font-weight: 500;
+.electron-section-title {
     text-align: center;
-    color: var(--primary-white);
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--electron-white);
+    margin-bottom: 2rem;
     letter-spacing: -0.5px;
-    margin-bottom: 3rem;
-    position: relative;
-    display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
-.section-text {
-    font-size: 1.2rem;
-    line-height: 1.8;
+.electron-section-text {
     text-align: center;
-    color: var(--text-gray);
-    max-width: 900px;
+    font-size: 1.25rem;
+    color: var(--electron-gray);
+    max-width: 800px;
     margin: 0 auto;
 }
 
-/* Founder Section */
-.founder-content {
+.electron-founder-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 4rem;
+    gap: 3rem;
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
-    animation: fadeIn 1s ease-out;
 }
 
-.founder-name {
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--primary-white);
-    margin-bottom: 1rem;
-    text-transform: capitalize;
-}
-
-.founder-bio {
-    font-size: 1.125rem;
-    color: var(--text-gray);
-    line-height: 1.8;
-    font-weight: 400;
-}
-
-/* Careers Section */
-.job-listings {
+.electron-job-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.job-listing {
-    background-color: var(--secondary-black);
-    padding: 2.5rem;
-    border-radius: 8px;
-    transition: var(--transition);
+.electron-job-card {
+    background-color: var(--electron-secondary-black);
+    padding: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: var(--electron-transition);
 }
 
-.job-listing:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    border-color: rgba(255, 255, 255, 0.2);
+.electron-job-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-.job-title {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: var(--primary-white);
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.job-description {
-    font-size: 1.125rem;
-    color: var(--text-gray);
-}
-
-/* Contact Section */
-.contact-info {
+.electron-contact-info {
     text-align: center;
-    margin-top: 2rem;
-    display: grid;
-    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.contact-link {
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: var(--primary-white);
+.electron-contact-link {
+    color: var(--electron-white);
     text-decoration: none;
-    transition: var(--transition);
-    display: inline-block;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 1.25rem;
+    transition: var(--electron-transition);
 }
 
-.contact-link:hover {
-    color: var(--text-gray);
-    transform: translateY(-2px);
+.electron-contact-link:hover {
+    color: var(--electron-gray);
 }
 
-.contact-text {
-    font-size: 1rem;
-    color: var(--text-gray);
-    margin-bottom: 1.5rem;
-}
-
-/* Footer */
-footer {
-    background-color: var(--secondary-black);
-    color: var(--text-gray);
-    padding: 2rem 0;
+.electron-footer {
+    background-color: var(--electron-secondary-black);
     text-align: center;
-    font-size: 0.875rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Media Queries */
-@media (max-width: 1200px) {
-    html {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 992px) {
-    .section {
-        padding: 100px 0;
-    }
-    
-    .founder-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        text-align: center;
-    }
+    padding: 2rem 0;
+    color: var(--electron-gray);
 }
 
 @media (max-width: 768px) {
-    html {
-        font-size: 14px;
-    }
-
-    .hero {
-        height: 70vh;
-    }
-
-    .logo-container {
-        max-width: 200px;
-    }
-
-    .section {
-        padding: 80px 0;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .job-listings {
+    .electron-founder-grid,
+    .electron-job-grid {
         grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 0 1.5rem;
-    }
-
-    .section {
-        padding: 60px 0;
-    }
-
-    .job-listing {
-        padding: 1.5rem;
-    }
-}
-
-/* Accessibility */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation: none !important;
-        transition: none !important;
-    }
-}
-
-/* Print Styles */
-@media print {
-    body {
-        background-color: white;
-        color: black;
-    }
-
-    .hero, .job-listing:hover {
-        background-color: white;
-        transform: none;
-        box-shadow: none;
     }
 }
