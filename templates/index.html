@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Logo" class="logo">
@@ -14,28 +15,35 @@
         </div>
     </section>
 
+    <!-- Mission Section -->
     <section id="mission">
         <div class="container">
-            <h2>Our Mission</h2>
-            <div class="mission-content">
-                <p>Our mission is to revolutionize the industry through innovative solutions and exceptional service. We strive to create sustainable value for our customers while maintaining the highest standards of quality and integrity.</p>
-            </div>
+            <h2 class="section-title">Our Mission</h2>
+            <p class="section-description">
+                Our mission is to revolutionize the industry through innovative solutions and exceptional service. 
+                We strive to create sustainable value for our customers while maintaining the highest standards of quality and integrity.
+            </p>
         </div>
     </section>
 
+    <!-- Founder Section -->
     <section id="founder">
         <div class="container">
-            <h2>Our Founder</h2>
+            <h2 class="section-title">Our Founder</h2>
             <div class="founder-content">
                 <h3>John Doe</h3>
-                <p>John Doe founded the company in 2024 with a vision to transform the industry. With over 15 years of experience in technology and innovation, John leads the company towards continuous growth and excellence.</p>
+                <p>
+                    John Doe founded the company in 2024 with a vision to transform the industry. With over 15 years of experience 
+                    in technology and innovation, John leads the company towards continuous growth and excellence.
+                </p>
             </div>
         </div>
     </section>
 
+    <!-- Careers Section -->
     <section id="careers">
         <div class="container">
-            <h2>Careers</h2>
+            <h2 class="section-title">Careers</h2>
             <div class="careers-content">
                 <div class="job-listing">
                     <h3>Senior Developer</h3>
@@ -49,18 +57,17 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-            <h2>Contact Us</h2>
-            <div class="contact-content">
-                <p>Get in touch with us for any inquiries or opportunities.</p>
-                <form class="contact-form">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Message" rows="5" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
+            <h2 class="section-title">Contact Us</h2>
+            <p>Get in touch with us for any inquiries or opportunities.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </section>
 </body>
