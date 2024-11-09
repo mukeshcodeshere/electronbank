@@ -30,20 +30,24 @@ body {
     background: #000;
 }
 
+/* Logo Container */
 .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 80%; /* Ensures logo does not stretch across the entire width */
-    width: 100%;
+    width: 100%; /* Full width of the container */
+    max-width: 300px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Center the container horizontally */
+    height: auto; /* Let it adjust according to the content */
 }
 
+/* Logo */
 .logo {
-    width: 100%; /* Makes logo width flexible with the container */
-    height: auto; /* Keeps aspect ratio intact */
-    object-fit: contain; /* Ensures the image does not get distorted */
+    width: 100%; /* Make the logo fill the container width */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensure the image is not distorted */
     max-width: 300px; /* Limit the maximum width */
-    max-height: 250px; /* Limit the maximum height */
+    max-height: 200px; /* Limit the maximum height */
 }
 
 /* Section Styling */
@@ -163,12 +167,12 @@ h2.section-title {
 
     /* Adjust logo container and size for mobile */
     .logo-container {
-        max-width: 80%; /* Ensure the logo doesn’t stretch too far */
+        max-width: 70%; /* Keep the logo from stretching too far on mobile */
     }
 
     .logo {
-        max-width: 200px; /* Adjust max width of logo */
-        max-height: 150px; /* Adjust max height for smaller screens */
+        max-width: 200px; /* Reduce the size of the logo on small screens */
+        max-height: 150px; /* Adjust the max-height */
     }
 
     .hero h1 {
