@@ -7,68 +7,73 @@
     <link rel="stylesheet" href="style.css"> <!-- External stylesheet link -->
 </head>
 <body>
-    <section class="hero">
+    <header class="hero">
         <div class="container">
             <div class="logo-container">
-                <!-- Removed inline styles and relying on external CSS -->
                 <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Electron Bank Logo" class="logo">
             </div>
         </div>
-    </section>
+    </header>
 
-    <section id="mission">
-        <div class="container">
-            <h2 class="section-title">Our Mission</h2>
-            <p class="section-description">
-                Our mission is to revolutionize the industry through innovative solutions and exceptional service. 
-                We strive to create sustainable value for our customers while maintaining the highest standards of quality and integrity.
-            </p>
-        </div>
-    </section>
-
-    <section id="founder">
-        <div class="container">
-            <h2 class="section-title">Our Founder</h2>
-            <div class="founder-content">
-                <h3>John Doe</h3>
-                <p>
-                    John Doe founded the company in 2024 with a vision to transform the industry. With over 15 years of experience 
-                    in technology and innovation, John leads the company towards continuous growth and excellence.
+    <main>
+        <section id="mission">
+            <div class="container">
+                <h2 class="section-title">Our Mission</h2>
+                <p class="section-description">
+                    Our mission is to revolutionize the industry through innovative solutions and exceptional service. 
+                    We strive to create sustainable value for our customers while maintaining the highest standards of quality and integrity.
                 </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="careers">
-        <div class="container">
-            <h2 class="section-title">Careers</h2>
-            <div class="careers-content">
-                <div class="job-listing">
-                    <h3>Senior Developer</h3>
-                    <p>We're looking for an experienced developer to join our growing team.</p>
-                </div>
-                <div class="job-listing">
-                    <h3>Marketing Manager</h3>
-                    <p>Join our marketing team and help shape our brand's future.</p>
+        <section id="founder">
+            <div class="container">
+                <h2 class="section-title">Our Founder</h2>
+                <div class="founder-content">
+                    <h3>John Doe</h3>
+                    <p>
+                        John Doe founded the company in 2024 with a vision to transform the industry. With over 15 years of experience 
+                        in technology and innovation, John leads the company towards continuous growth and excellence.
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <div class="contact-info">
-                <a href="mailto:info@electronbank.com" class="email-link">
-                    info@electronbank.com
-                    <div class="email-description">For general inquiries</div>
-                </a>
-                <a href="mailto:careers@electronbank.com" class="email-link">
-                    careers@electronbank.com
-                    <div class="email-description">For job inquiries</div>
-                </a>
+        <section id="careers">
+            <div class="container">
+                <h2 class="section-title">Careers</h2>
+                <div class="careers-content">
+                    <div class="job-listing">
+                        <h3>Senior Developer</h3>
+                        <p>We're looking for an experienced developer to join our growing team.</p>
+                    </div>
+                    <div class="job-listing">
+                        <h3>Marketing Manager</h3>
+                        <p>Join our marketing team and help shape our brand's future.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-info">
+                    <a href="mailto:info@electronbank.com" class="email-link">
+                        info@electronbank.com
+                        <div class="email-description">For general inquiries</div>
+                    </a>
+                    <a href="mailto:careers@electronbank.com" class="email-link">
+                        careers@electronbank.com
+                        <div class="email-description">For job inquiries</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Electron Bank. All rights reserved.</p>
+    </footer>
 </body>
 </html>
