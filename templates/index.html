@@ -1,28 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>My Modern Website</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Professional Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo-container">
-      <img src="static/images/logo.svg" alt="Logo" class="logo">
-    </div>
-  </header>
+    <header>
+        <nav>
+            <img src="/static/images/logo.svg" alt="Logo" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section class="hero">
-      <h1>Welcome to Our Modern Site</h1>
-      <p>We specialize in sleek and professional design solutions.</p>
-    </section>
-  </main>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Your Professional Brand</h1>
+                <p>Crafting exceptional solutions with precision and elegance</p>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+        </section>
 
-  <footer>
-    <p>&copy; 2024 Your Company. All rights reserved.</p>
-  </footer>
+        <section id="about" class="about">
+            <div class="section-content">
+                <h2>About Us</h2>
+                <p>We deliver innovative solutions with a focus on simplicity and impact. Our approach combines cutting-edge technology with elegant design.</p>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="section-content">
+                <h2>Our Services</h2>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <h3>Strategy</h3>
+                        <p>Comprehensive strategic planning</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Design</h3>
+                        <p>Innovative and user-centric design solutions</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Development</h3>
+                        <p>Robust and scalable technological implementations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="section-content">
+                <h2>Contact Us</h2>
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
