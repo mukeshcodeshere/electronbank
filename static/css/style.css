@@ -12,8 +12,8 @@ html {
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    background-color: #fff;
-    color: #333;
+    background-color: #0a0a0a; /* Dark background */
+    color: #fff; /* White text */
 }
 
 /* Container (for content alignment) */
@@ -26,7 +26,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background-color: #000;
+    background-color: #111; /* Dark background */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -55,11 +55,11 @@ body {
     font-size: 2.5rem;
     font-weight: 800;
     text-align: center;
-    color: #000;
+    color: #fff; /* White text for headings */
     letter-spacing: 1px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #fff; /* White border */
     display: inline-block;
     padding-bottom: 10px;
 }
@@ -68,7 +68,7 @@ body {
     font-size: 1.125rem;
     line-height: 1.8;
     text-align: center;
-    color: #555;
+    color: #ccc; /* Lighter text for readability */
     max-width: 900px;
     margin: 0 auto;
 }
@@ -82,13 +82,13 @@ body {
 .founder-name {
     font-size: 2rem;
     font-weight: 700;
-    color: #000;
+    color: #fff; /* White text for name */
     margin-bottom: 10px;
 }
 
 .founder-bio {
     font-size: 1.125rem;
-    color: #777;
+    color: #ccc; /* Lighter text */
 }
 
 /* Careers Section */
@@ -101,7 +101,7 @@ body {
 }
 
 .job-listing {
-    background-color: #f8f8f8;
+    background-color: #222; /* Dark gray background */
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -116,13 +116,13 @@ body {
 .job-title {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #000;
+    color: #fff; /* White text for job titles */
     margin-bottom: 10px;
 }
 
 .job-description {
     font-size: 1.125rem;
-    color: #777;
+    color: #ccc; /* Lighter text */
 }
 
 /* Contact Section */
@@ -134,7 +134,7 @@ body {
 .contact-link {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #000;
+    color: #fff; /* White text */
     text-decoration: none;
     transition: color 0.2s ease;
     display: inline-block;
@@ -142,18 +142,18 @@ body {
 }
 
 .contact-link:hover {
-    color: #555;
+    color: #ccc; /* Lighter hover effect */
 }
 
 .contact-text {
     font-size: 1rem;
-    color: #777;
+    color: #ccc; /* Lighter text */
     margin-top: 5px;
 }
 
 /* Footer */
 footer {
-    background-color: #000;
+    background-color: #111; /* Dark footer */
     color: #fff;
     padding: 20px 0;
     text-align: center;
